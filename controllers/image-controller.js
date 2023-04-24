@@ -12,7 +12,7 @@ g_app.post('/api/image', async (req, res) => {
         const steps = req.body.steps;
         const batchSize = req.body.batchSize;
         
-        const result = await Axios.post('http://127.0.0.1:7861/sdapi/v1/txt2img', {
+        const result = await Axios.post('http://127.0.0.1:7860/sdapi/v1/txt2img', {
             prompt: prompt,
             steps: steps,
             batch_size: batchSize
